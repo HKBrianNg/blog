@@ -1,6 +1,10 @@
 import React from 'react'
 
-function BlogList({ blogs, title, handleDelete }) {
+function BlogList({ blogs, title }) {
+    const handleDelete = (id) => {
+        console.log("delete:", id);
+    }
+
     return (
         <div className='blog-list'>
             <h2>{title}</h2>
