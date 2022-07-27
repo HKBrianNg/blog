@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Create from './Create';
 import { Routes, Route } from 'react-router-dom';
+import BlogDetails from './BlogDetails';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/blogs/:id" element={<BlogDetails />} />
         </Routes>
       </div>
     </div>
